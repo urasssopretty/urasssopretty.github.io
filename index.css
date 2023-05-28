@@ -14,7 +14,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body
@@ -46,7 +46,7 @@ body
 
 .wrapper
 {
-    padding-top: calc(1vw + 2vh);
+    /* padding-top: calc(1vw + 2vh); */
 
     display: flex;
     justify-content: center;
@@ -54,7 +54,15 @@ body
     align-items: center;
 }
 
-#e2
+/* #e2
 {
     padding: 0 5vw;
+} */
+
+@media only screen and (max-width : 1200px)
+{
+    body
+    {
+        height: 80vh;
+    }        
 }
