@@ -5,8 +5,6 @@
     --font-size: calc(4vw + 4vh);
     --text-color: #212121;
     --bg-color: #f0f0f0;
-    /* --text-color: #f0f0f0;
-    --bg-color: #212121; */
 }
 
 *
@@ -52,6 +50,12 @@ body
     justify-content: center;
     /* justify-content: space-around; */
     align-items: center;
+
+}
+
+.emoji
+{
+    font-size: calc( 4vw + 4vh );
 }
 
 /* #e2
