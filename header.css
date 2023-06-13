@@ -1,0 +1,62 @@
+header
+{
+	height: var(--header-size);
+
+	position: absolute;
+	top: 1vw;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	column-gap: 25vw;
+}
+
+header h2
+{
+	font: bold var(--h2-size) Segoe UI, -apple-system-headline, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+nav
+{
+	padding: 1vw;
+
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2vw;
+
+    background-color: var(--bg-nav);
+	border-radius: 30vw;
+    
+    font: bold var(--text-nav) Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+	font-size: calc(2vw + 1vh);
+}
+
+.menu-item
+{
+	padding: 1vw;
+    border-radius: 30vw;
+
+    display: inline-block;
+
+    transition: background-color ease-in-out .25s;
+}
+
+.menu-item:hover
+{
+    background-color: magenta;
+    text-decoration: underline;
+}
+
+.menu-item::after
+{
+
+}
+
+.active-menu-item
+{
+    font-weight: 200;
+    background-color: var(--text-color);
+    color: #fafafa;
+    padding: 1vw 2vw;
+}
+

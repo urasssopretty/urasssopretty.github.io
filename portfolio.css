@@ -1,71 +1,25 @@
-:root
-{
-	--h2-size: calc(2vw + 4vh);
-	--text-size: calc(2vw + 2vh);
-	
-	--text-color: #212121;
-	--bg-color: #f0f0f0;
-	--fg-color: #d9d9d9;
-	--accent-color: #e5e5e5;
-}
-
 *
 {
+	/* border: 1px solid red; */
+
 	margin: 0;
 	padding: 0;
 
 	box-sizing: border-box;
 	list-style: none;
-
-	/* border: 1px solid red; */
 }
 
 body
 {
 	width: 100vw;
 	height: 100vh;
+	padding-top: var(--header-size);
 
-	background-color: var(--bg-color);
+	display: flex;
+	justify-content: center;
 
-	font: var(--text-size) "Roboto", "Helvetica", sans-serif;
+	background-color: var(--main-bg-color);
+
+	font: var(--text-size) Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 	color: var(--text-color);
-}
-
-header
-{
-	width: 100vw;
-	height: 15vh;
-	/* height: calc(20vw - 5vh); */
-
-	position: absolute;
-	top: 0;
-	
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-header h2
-{
-	font: bold var(--h2-size) "Roboto", "Helvetica", sans-serif;
-}
-
-nav
-{
-	width: 30vw;
-
-	display: flex;
-	justify-content: space-around;
-
-	padding: calc((1vw + 1vh));
-	font-size: calc(1vw + 2vh);
-
-	background-color: var(--fg-color);
-	border-radius: calc(5vw + 5vh);
-
-}
-
-.menu-item
-{
-	padding: 1vw;
 }

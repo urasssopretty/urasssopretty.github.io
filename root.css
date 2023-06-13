@@ -1,0 +1,45 @@
+/* 
+
+	TODO:
+		- read about container query)
+
+*/
+
+:root
+{
+	/* global */
+    
+        /* font-sizes */
+	--h2-size: calc(2vw + 4vh);
+	--text-size: calc(2vw + 2vh);
+
+	    /* colors */
+	--text-color: #212121;
+	--main-bg-color: #F6ECC9;
+	--main-accent-color: #e5e5e5;
+
+    
+    /* header */
+    --bg-nav: #97B6DF;
+    --text-nav: calc(1vh + 2vw);
+    --header-size: 11vh;
+}
+
+::selection
+{
+	background-color: magenta;
+}
+
+a:link
+{
+	text-decoration: none;
+	color: #0000EE;
+}
+a:visited
+{
+	color: #551A8B;
+}
+a:hover, a:active
+{
+	text-decoration: underline;
+}
