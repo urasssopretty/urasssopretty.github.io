@@ -1,0 +1,26 @@
+.main
+{
+	width: 95vw;
+
+	display: flex;
+	/* justify-content: center; */
+
+	margin-top: 10vh;
+}
+
+.main .left, .main .right
+{
+	width: 47.5vw;
+}
+
+.main .left p
+{
+	margin-bottom: 1vw;
+	/* line-height: auto; */
+	line-height: 115%;
+}
+
+.main .right p
+{
+	font-size: calc(2vw + 1vh);
+}
