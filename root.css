@@ -47,17 +47,17 @@ a:hover, a:active
 @media (min-width: 1250px)
 {
 	:root
-{
-	--global-margin-left: 1.5vw;
-    --global-margin-top: 2.5vw;
-	--global-mini-margin-top: 1vw;
+	{
+		--global-margin-left: 1.5vw;
+		--global-margin-top: 2.5vw;
+		--global-mini-margin-top: 1vw;
+			
+		/* content main */
+		--main-line-height:	110%;
 		
-	/* content main */
-	--main-line-height:	110%;
-	
-	/* font-sizes */
-	--h2-size: calc(4vw + 3vh);
-	--text-size: calc(3vw + 2vh);
-	--smalltext-size: calc(1vw + 2vh);
-}
+		/* font-sizes */
+		--h2-size: calc(4vw + 3vh);
+		--text-size: calc(3vw + 2vh);
+		--smalltext-size: calc(1vw + 2vh);
+	}
 }
