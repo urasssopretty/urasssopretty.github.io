@@ -1,26 +1,28 @@
-.main
+.content
 {
 	width: 95vw;
-
-	display: flex;
-	/* justify-content: center; */
-
-	margin-top: 10vh;
+	margin-left: 2.5vw;
 }
 
-.main .left, .main .right
+.content .main
 {
-	width: 47.5vw;
+	line-height: 120%;
 }
 
-.main .left p
+.content .contact
 {
-	margin-bottom: 1vw;
-	/* line-height: auto; */
-	line-height: 115%;
+	margin-top: 3vw;
+	font-size: var(--smalltext-size);
 }
 
-.main .right p
+.content .myprojects
 {
-	font-size: calc(2vw + 1vh);
+	margin-top: 5vw;
+
+}
+
+.content .myprojects a
+{
+	font-size: var(--smalltext-size);
+	
 }
