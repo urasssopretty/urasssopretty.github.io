@@ -8,7 +8,6 @@
 	--global-container-size: 95vw;
 	--global-fonts: "Roboto", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
 	
-	
 	/* content main */
 	--main-line-height:	120%;
 	
@@ -52,7 +51,6 @@ a:hover, a:active
 	--global-margin-left: 1.5vw;
     --global-margin-top: 2.5vw;
 	--global-mini-margin-top: 1vw;
-	--global-container-size: 95vw;
 		
 	/* content main */
 	--main-line-height:	110%;
