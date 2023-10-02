@@ -94,14 +94,6 @@ function generate()
 	
 		$( emojiElements[i] ).text( emoji[ randNum ] )
 	}
-	
-	$('.emoji').click(function()
-	{
-		if ($(this).hasClass("shake"))
-			$(".emoji").removeClass("shake");
-		else
-			$(this).addClass("shake");
-	});
 }
 
 $(document).ready( function()
@@ -111,8 +103,18 @@ $(document).ready( function()
 	$("body").click( function(event)
 	{
 		// alert(event.target.nodeName)
-		if (event.target.nodeName != "SPAN")
+		if (event.target.nodeName != "SPAN") {
 			generate()
+			$("SPAN").removeClass("shake");
+		}
 	})
+
+	$('.emoji').click(function()
+	{
+		if ($(this).hasClass("shake"))
+			$(".emoji").removeClass("shake");
+		else
+			$(this).addClass("shake");
+	});
 });
 
