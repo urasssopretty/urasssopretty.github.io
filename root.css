@@ -1,63 +1,83 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap'); */
-
 :root
 {
-	--global-margin-left: 2.5vw;
-    --global-margin-top: 5vw;
-	--global-mini-margin-top: 3vw;
-	--global-container-size: 95vw;
-	--global-fonts: "Roboto", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+	--text-font: sans-serif;
+	--accent-text-font: serif;
 	
-	/* content main */
-	--main-line-height:	120%;
+	--text-font-size: calc((3vw + 2vh)/2);
+	--h1-font-size: calc(4vw+4vh);
+	--h2-font-size: calc(4vw+3vh);
+	--h3-font-size: calc(4vw+2vh);
+	--h4-font-size: calc(3vw+2vh);
+	--h5-font-size: calc(2vw+2vh);
+	--h6-font-size: var(--global-text-font-size);
 	
-	/* font-sizes */
-	--h2-size: calc(4vw + 4vh);
-	--text-size: calc(4vw + 2vh);
-	--smalltext-size: calc(2vw + 2vh);
+	--text-color: #e6e6e6;
+	--link-color: #3296ff;
+	--bg-color: #191919;
+	
+	--selected-color: #3296ff;
+	--line-height:	120%;
+	--headers-line-height:	150%;
 
-	/* colors */
-	--text-color: #1e1e1e;
-	--bg-color: #9FAECC;
-	
-	--selection-day-color: #ECE3C1;
-	/* --selection-night-color: #131c3e; */
-}
-
-::selection
-{
-	background-color: var(--selection-day-color);
+	--paragraph-padding: calc(var(--text-font-size) * var(var(--line-height)));
 }
 
-a:link
-{
-	text-decoration: underline;
-	color: #0000EE;
+/* RESET STYLES */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
 }
-a:visited
-{
-	color: #551A8B;
+body {
+	-webkit-font-smoothing: antialiased;
 }
-a:hover, a:active
-{
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+input, button, textarea, select {
+	font: inherit;
+}
+
+/* CUSTOM STYLES DEFINE */
+a:link {
+	text-decoration: none;
+	color: var(--link-color);
+}
+a:visited {
+	color: var(--link-color);
+}
+a:hover, a:active {
 	text-decoration: none;
 }
 
+/* p:not(:last-child) { */
+p {
+	padding-bottom: var(--paragraph-padding);
+}
 
-@media (min-width: 1250px)
-{
-	:root
-	{
-		--global-margin-left: 1.5vw;
-		--global-margin-top: 2.5vw;
-		--global-mini-margin-top: 1vw;
-			
-		/* content main */
-		--main-line-height:	110%;
-		
-		/* font-sizes */
-		--h2-size: calc(4vw + 3vh);
-		--text-size: calc(3vw + 2vh);
-		--smalltext-size: calc(1vw + 2vh);
-	}
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--accent-text-font);
+	font-weight: 700;
+
+	line-height: var(--headers-line-height);
+}
+
+h1 { 
+	font-size: var(--h1-font-size);
+}
+h2 { 
+	font-size: var(--h2-font-size);
+}
+h3 { 
+	font-size: var(--h3-font-size);
+}
+h4 { 
+	font-size: var(--h4-font-size);
+}
+h5 { 
+	font-size: var(--h5-font-size);
+}
+h6 { 
+	font-size: var(--h6-font-size);
 }
