@@ -2,31 +2,3 @@
 	/* border: 1px solid red; */
 }
 
-body {
-	font-family: var(--text-font);
-	font-size: var(--text-font-size);
-	color: var(--text-color);
-	line-height: var(--line-height);
-	font-weight: lighter;
-
-	background-color: var(--bg-color);
-
-	max-width: 50vw;
-	margin: 0 auto;
-}
-
-
-header {
-	display: flex;
-	justify-content: center;
-
-	padding: 1vw;
-}
-.menu-item {
-	font-family: var(--accent-text-font);
-	font-weight: 700;
-}
-.menu-item:not(:last-child) {
-	padding-right: 5vw;
-}
-
